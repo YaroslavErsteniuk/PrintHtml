@@ -28,6 +28,17 @@
 
 #include <QObject>
 #include <QCoreApplication>
+#include <QtGlobal>
+
+
+#if QT_VERSION >= 0x050000
+#include <QPrinter>
+#include <QMessageBox>
+#include <QSslSocket>
+#include <QApplication>
+#include <QtWebKitWidgets/QWebPage>
+#include <QtWebKitWidgets/QWebFrame>
+#endif
 
 class PrintHtml : public QObject
 {
